@@ -30,19 +30,19 @@ cdef class uriparser:
 	cdef bytes _print_uri(self,liburi.URI *uri):
 		cdef size_t len
 		cdef char *buffer
-		cdef bytes result = ""
+		cdef bytes result
 
 		len = liburi.uri_str(uri, NULL, 0)
 		if not len:
-			return result
+			return <bytes>""
 
 		buffer = <char *>malloc(len)
 		if not buffer:
-			return result
+			return <bytes>""
 
 		len = liburi.uri_str(uri, buffer, len)
 		if not len: 
-			return result
+			return <bytes>""
 		
 		result = <bytes>buffer
 
