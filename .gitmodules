@@ -1,0 +1,3 @@
+[submodule "liburi"]
+	path = liburi
+	url = https://github.com/nevali/liburi
