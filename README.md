@@ -55,7 +55,7 @@ uriparser_isntance.join( BASEURI, URI ) -> Relative URI
 # Requirements
 
 1. Cython 0.23
-2. liburi
+2. [liburi](https://github.com/nevali/liburi)
 
 # Install
 
