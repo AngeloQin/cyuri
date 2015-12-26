@@ -56,3 +56,13 @@ uriparser_isntance.join( BASEURI, URI ) -> Relative URI
 
 1. Cython 0.23
 2. liburi
+
+# Install
+
+1. git clone --recursive https://github.com/mitghi/cyuri
+2. cd ./cyuri/liburi
+3. autoreconf -i
+4. ./configure --prefix=/some/path
+5. make
+6. make install
+7. cd ..; make
